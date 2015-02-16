@@ -59,6 +59,8 @@ module.exports = function getRecentCommit(module, cb) {
 	if (typeof cb === 'function') {
 		promiseMaybe.then(function(commit) {
 			cb(false, commit)
+		}, function(err) {
+			cb(err)
 		})
 	} else {
 		return promiseMaybe
