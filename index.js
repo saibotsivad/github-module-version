@@ -2,7 +2,7 @@ var Promise = require('promise')
 var https = require('https')
 var GitHubApi = require('github')
 
-module.exports = function getRecentCommit(module, cb) {
+module.exports = function getRecentCommit(module, auth, cb) {
 	var github = new GitHubApi({
 		version: '3.0.0',
 		protocol: 'https',
@@ -11,6 +11,12 @@ module.exports = function getRecentCommit(module, cb) {
 			'user-agent': 'npmupdater'
 		}
 	})
+
+	if (typeof auth === 'object') {
+		github.authenticate(auth)
+	} else if (typeof auth === 'function') {
+		cb = auth
+	}
 
 	var promiseMaybe = new Promise(function(resolve, reject) {
 		if (!module || !module.user || !module.repo) {
