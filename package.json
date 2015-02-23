@@ -1,6 +1,6 @@
 {
   "name": "github-module-version",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Get the most recent package.json change and npm version number.",
   "main": "index.js",
   "scripts": {
