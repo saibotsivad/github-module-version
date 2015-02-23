@@ -21,7 +21,8 @@
     "url": "https://github.com/tobiaslabs/github-module-version/issues"
   },
   "dependencies": {
-    "github": "~0.2.3"
+    "github": "~0.2.3",
+    "promise": "~6.1.0"
   },
   "devDependencies": {
     "tape": "~3.5.0"
