@@ -2,7 +2,7 @@ var test = require('tape')
 var moduleVersion = require('./index')
 
 var testRepo = {
-	user: 'tobiaslabs',
+	user: 'saibotsivad',
 	repo: 'test-github-module-version'
 }
 
