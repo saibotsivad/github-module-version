@@ -1,5 +1,7 @@
 # github-module-version [![Build Status](https://travis-ci.org/tobiaslabs/github-module-version.svg?branch=master)](https://travis-ci.org/sdmp/github-module-version)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/saibotsivad/github-module-version.svg)](https://greenkeeper.io/)
+
 For a Github repo, get the most recent commit that changed the `properties.json` file.
 
 Returns the commit information, and the entire `properties.json` object.
