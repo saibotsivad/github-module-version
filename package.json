@@ -21,10 +21,10 @@
     "url": "https://github.com/saibotsivad/github-module-version/issues"
   },
   "dependencies": {
-    "github": "~0.2.3",
-    "promise": "~6.1.0"
+    "github": "~9.2.0",
+    "promise": "~8.0.1"
   },
   "devDependencies": {
-    "tape": "~3.5.0"
+    "tape": "~4.7.0"
   }
 }
